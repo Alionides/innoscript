@@ -63,7 +63,7 @@ migrate: ## Run migration files
 migrate-fresh: ## Clear database and run all migrations
 	docker exec ${APP_NAME}_${CONTAINER_PHP} php artisan route:clear
 	docker exec ${APP_NAME}_${CONTAINER_PHP} php artisan config:clear
-	docker exec ${APP_NAME}_${CONTAINER_PHP} php artisan cache:clear
+	#docker exec ${APP_NAME}_${CONTAINER_PHP} php artisan cache:clear
 	docker exec ${APP_NAME}_${CONTAINER_PHP} php artisan storage:link
 	docker exec ${APP_NAME}_${CONTAINER_PHP} php artisan migrate:fresh --seed --force
 

@@ -13,9 +13,15 @@ fi
 
 php artisan key:generate
 php artisan migrate
-php artisan optimize clear
+#php artisan optimize clear
 php artisan view:clear
 php artisan route:clear
+
+# Scheduler
+while true; do
+    php artisan app:fetch-news
+    sleep 3600
+done &
 
 php-fpm -D
 nginx -g "daemon off;"
