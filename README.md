@@ -18,6 +18,7 @@ Database
     - Username: innoscript_user  
     - Password: innoscript_db123  
     - Database: innoscript_db  
+
 Schedule  
     - docker/entrypoint.sh runs this command every hour:  php artisan app:fetch-news  
 
