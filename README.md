@@ -1,5 +1,8 @@
 
 ## Innoscripts Backend Take Home Challenge
+Task  
+    - Task explanation is in Task.pdf file
+
 
 Installation Steps  
     - git clone https://github.com/Alionides/innoscript  
